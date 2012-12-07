@@ -1,1 +1,2 @@
 #define STAssertEqualStrings(expectedString, actualString) STAssertTrue([expectedString isEqualToString:actualString], @"Expected: %@ but found %@", expectedString, actualString)
+#define STAssertEqualRects(expectedRect, actualRect) STAssertTrue(CGRectEqualToRect(expectedRect, actualRect), @"Expected: %@ but found %@", NSStringFromCGRect(expectedRect), NSStringFromCGRect(actualRect))
